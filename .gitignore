@@ -1,0 +1,15 @@
+.DS_Store
+*.pyc
+.sass-cache/
+node_modules/
+fontcustom/*
+*.swp
+doc/_build
+doc/_static
+doc/_templates
+*.log
+config.py
+*.rdb
+.webassets-cache
+bower/
+index.css

@@ -1,0 +1,144 @@
+/* ==========================================
+     Config
+     ========================================== */
+$primary-color: #37d1b1
+$title-color: #111
+$secondary-color: #3879d9
+$type-color: #242424
+$background-color: #f0f0f0
+$muted-color: #bbb
+$primary-type: 'Istok Web', Verdana, Geneva, sans-serif
+$title-type: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"
+$selection-background: #37d1b1
+$warn-color: #e03939
+
+$nav-width: 12em
+
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700)
+@import url(http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic)
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700)
+
+@import "core/core"
+
+/* ==========================================
+     Extensions
+     ========================================== */
+@import "exts/icons"
+
+
+/* ==========================================
+     Modules
+     ========================================== */
+
+@import "modules/pygments"
+
+
+/* ==========================================
+     Your Styles
+     ========================================== */
+
+body
+    color: $type-color
+    background: $background-color
+    font-family: $primary-type
+
+header
+    background: $primary-color
+    padding: 1em
+    overflow: hidden
+    a
+        color: $type-color
+        &:hover
+            border-bottom: none
+    h1
+        float: left
+    .searchbox
+        float: right
+        margin-top: 1em
+
+footer
+    padding: 1em
+    color: $muted-color
+    font-size: 0.8em
+
+a
+    color: $secondary-color
+    text-decoration: none
+    &:hover
+        border-bottom: 1px dotted $secondary-color
+
+h1
+    margin: 0
+h2
+    font-size: 2.2em
+h1, h2
+    font-family: $title-type
+
+pre, code, .simple
+    font-family: 'Inconsolata', 'monospace'
+pre, .simple
+    background: #eaeaea
+    padding: 1em
+
+.content
+    padding: 2em 2em 2em $nav-width
+    min-height: 26em
+
+nav
+    position: absolute
+    width: $nav-width
+    padding: 2em 0
+nav, .toctree-wrapper
+    ul
+        padding: 0 1em
+
+a.current
+    background: $secondary-color
+    color: #fff
+    padding: 0em 0.25em
+    &:hover
+        border-bottom: none
+
+.headerlink
+    font-size: 0.4em
+    margin-left: 0.4em
+    vertical-align: middle
+
+thead
+    background: $secondary-color
+    color: #fff
+td
+    padding: 1em
+input
+    border: none
+    padding: 0.5em 1em
+
+.pagination
+    overflow: hidden
+    margin: 2em 0
+.prev
+    float: left
+.next
+    float: right
+
+.admonition
+    color: #fff
+    padding: 0.5em 2em
+.warning
+    background: $warn-color
+    border-left: 8px solid darken($warn-color, 12%)
+.note
+    background: $primary-color
+    border-left: 8px solid darken($primary-color, 8%)
+
+.descname
+    background: $secondary-color
+    padding: 0.2em 0.4em
+    color: #fff
+.class
+    margin: 4em 0
+.property
+    color: $muted-color
+.docutils dt, .descclassname
+    font-weight: bold
+
