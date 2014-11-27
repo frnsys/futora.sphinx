@@ -1,5 +1,0 @@
-futora/__init__.py
-futora.egg-info/PKG-INFO
-futora.egg-info/SOURCES.txt
-futora.egg-info/dependency_links.txt
-futora.egg-info/top_level.txt
